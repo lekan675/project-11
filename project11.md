@@ -156,9 +156,9 @@ So, update the inventory/dev.yml file with this snippet of code:
 
 ### Step 5 – Create a Common Playbook
 
-- In **common.yml** playbook i'll write configuration for repeatable, re-usable, and multi-machine tasks that is common to systems within the infrastructure.
+- In **common.yml** playbook, I'll write the configuration to be repeatableand re-usable, and multi-task. 
 
-I'll update my **playbooks/common.yml** file with following code:
+    I'll update my **playbooks/common.yml** file with following code:
 
     ---
     - name: update web, nfs and db servers
@@ -186,9 +186,9 @@ I'll update my **playbooks/common.yml** file with following code:
             name: wireshark
             state: latest
 
-This playbook is divided into two parts, each of them is intended to perform the same task: install [wireshark](https://en.wikipedia.org/wiki/Wireshark) utility (or make sure it is updated to the latest version) on my RHEL 8 and Ubuntu servers.
+    This playbook is divided into two parts, each of them is intended to perform the same task: install [wireshark](https://en.wikipedia.org/wiki/Wireshark) utility (or make sure it is updated to the latest version) on my RHEL 8 and Ubuntu servers.
 
-It uses `root` user to perform this task and respective package manager: `yum` for `RHEL 8` and `apt` for `Ubuntu`.
+    It uses `root` user to perform this task and respective package manager: `yum` for `RHEL 8` and `apt` for `Ubuntu`.
 
 ## Step 6 – Update GIT with the latest code
 
@@ -294,13 +294,16 @@ Update the ansible playbook with some new Ansible tasks and go through the full
     
     ![](./images/update%20ansible%20playbook.jpg)
 
-After updating the ansible playbook with some new Ansible tasks,  I'll initiate the full checkout -> change codes -> commit -> PR -> merge -> build -> ansible-playbook
-
-On new-branch
+After updating the ansible playbook with some new Ansible tasks, 
 
 `git status > git pull > git add . > git commit > git push origin new-branch`
 
-![](./images/pull%20and%20merge.jpg)
+    ![](./images/pull%20and%20merge.jpg)
+
+
+ I'll initiate the full checkout -> change codes -> commit -> PR -> merge -> build -> ansible-playbook
+
+On the new-branch
 
 ![](./images/updated%20ansible%20playbook%20build.jpg)
 
