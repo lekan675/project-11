@@ -296,7 +296,7 @@ After updating the ansible playbook with some new Ansible tasks,
 
 `git status > git pull > git add . > git commit > git push origin new-branch`
 
-    ![](./images/pull%20and%20merge.jpg)
+![](./images/pull%20and%20merge.jpg)
 
 
  I'll initiate the full checkout -> change codes -> commit -> PR -> merge -> build -> ansible-playbook
