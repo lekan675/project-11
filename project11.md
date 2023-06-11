@@ -212,8 +212,6 @@ Commit my code into my GitHub branch (new-branch)
 
     ![](./images/create%20pull%20request.jpg)
 
-    ![](./images/pull%20and%20merge.jpg)
-
     ![](./images/merge%20pull%20request.jpg)
 
 3. Since branch (new-branch) has been merged to main branch, code changes will now appear in master/main branch
