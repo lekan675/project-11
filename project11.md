@@ -185,6 +185,7 @@ So, update the inventory/dev.yml file with this snippet of code:
           apt:
             name: wireshark
             state: latest
+  ![](./images/update my playbooks- common.yml file.jpg)
 
     This playbook is divided into two parts, each of them is intended to perform the same task: install [wireshark](https://en.wikipedia.org/wiki/Wireshark) utility (or make sure it is updated to the latest version) on my RHEL 8 and Ubuntu servers.
 
